@@ -15,7 +15,7 @@ var timer = setInterval(function () {
   if (month > 6) {
     diff = thirdOfJulyNextYear - today;
   } else {
-    diff = fourthOfJuly - today;
+    diff = thirdhOfJuly - today;
   } // operaciones matemáticas
 
 
