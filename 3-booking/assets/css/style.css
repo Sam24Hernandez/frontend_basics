@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,600,700,800|Poppins:400,500,600,700|Yellowtail&display=swap");
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* general */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+/* Header Navigation */
+header.top-header {
+  position: relative;
+  background-color: #343a40;
+  background: url("https://thumbnails.expedia.com/Z7ed3O9TYmEnqSgGad44zMuD41I=/1900x425/smart/filters:quality(80)/a.cdn-hotels.com/cos/heroimage/homepage/MEXICO__191920042.jpg")
+    no-repeat center center;
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+header.top-header .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+header.top-header h1 {
+  font-size: 2rem;
+}
+
+.navbar-brand {
+  color: #1e62d8 !important;
+  font-weight: 700;
+}
+
+#mainNav.navbar-shrink {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #212529;
+}
+
+#mainNav.navbar-shrink .navbar-brand {
+  font-size: 1.25em;
+}
+
+/* Booking Form */
+.booking-form {
+  background-color: #fff;
+  padding: 50px 20px;
+  -webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.booking-form .form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.booking-form .form-control {
+  background-color: #ebecee;
+  border-radius: 5px;
+  border: none;
+  height: 52px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #3e485c;
+  font-size: 14px;
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+  color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+  color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form .form-control::placeholder {
+  color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form input[type="date"].form-control:invalid {
+  color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.booking-form select.form-control + .select-arrow {
+  position: absolute;
+  right: 0px;
+  bottom: 4px;
+  width: 32px;
+  line-height: 32px;
+  height: 32px;
+  text-align: center;
+  pointer-events: none;
+  color: rgba(62, 72, 92, 0.3);
+  font-size: 14px;
+}
+
+.booking-form select.form-control + .select-arrow:after {
+  content: "\279C";
+  display: block;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.booking-form .form-label {
+  display: inline-block;
+  color: #3e485c;
+  font-weight: 700;
+  margin-bottom: 6px;
+  margin-left: 7px;
+}
+
+.booking-form .submit-btn {
+  display: inline-block;
+  color: #fff;
+  background-color: #1e62d8;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 5px;
+  border: none;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  width: 100%;
+  cursor: pointer;
+}
+
+.booking-form .submit-btn:hover,
+.booking-form .submit-btn:focus {
+  opacity: 0.9;
+}
+
+/* Features */
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+  font-size: 5rem;
+}
+
+/* Showcase */
+.showcase {
+  padding: 3rem;
+}
+
+.showcase h2 {
+  font-size: 1.5rem;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-multi-item .controls-top {
+  text-align: center;
+  margin-bottom: 1.88rem;
+}
+
+.btn-floating {
+  box-shadow: 0 5px 11px rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  width: 48px;
+  height: 48px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 10px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.btn-floating i {
+  font-size: 1.25rem;
+  line-height: 48px;
+  display: inline-block;
+  width: inherit;
+  text-align: center;
+  color: #fff;
+}
+
+.carousel-multi-item .controls-top .btn-floating {
+  background-color: #4285f4;
+}
+
+/* Testimoniales */
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.testimonials .testimonial-item {
+  max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+  transition: all 0.2s ease-in-out;
+}
+
+.testimonials .testimonial-item img:hover {
+  max-width: 13rem;
+}
+
+/* Newsletter */
+.call-to-action {
+  position: relative;
+  background-color: #343a40;
+  background: url("https://raw.githubusercontent.com/StartBootstrap/startbootstrap-landing-page/master/img/bg-masthead.jpg")
+    no-repeat center center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.call-to-action .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+/* Footer */
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Scroll up */
+#scrollUp,
+#back-top {
+  background-color: #4285f4;
+  height: 50px;
+  width: 50px;
+  right: 31px;
+  bottom: 18px;
+  position: fixed;
+  color: #fff !important;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 48px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 10px 3px rgba(108, 98, 98, 0.2);
+}
+@media (max-width: 575px) {
+  #scrollUp,
+  #back-top {
+    right: 16px;
+  }
+}
+#scrollUp a i,
+#back-top a i {
+  display: block;
+  color: #fff;
+  line-height: 50px;
+}
+#scrollUp:hover {
+  color: #fff !important;
+}
