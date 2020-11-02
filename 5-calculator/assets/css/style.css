@@ -21,6 +21,30 @@ h1 {
   text-shadow: 3px 3px 1px black;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9em;
+}
+
+footer p {
+  letter-spacing: 2px;
+  color: #ef2f3c;
+}
+
+footer a {
+  color: #f6f4f3;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #276fbf;
+}
+
 /* Calculadora */
 .calculator {
   position: absolute;
