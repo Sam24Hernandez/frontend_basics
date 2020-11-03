@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Raleway";
+  color: #888;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+.nav ul {
+  margin: 0;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 0.5em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-nav {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: lighter;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.main-nav li {
+  padding: 0 5%;
+}
+
+.main-header {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url("../images/header-bg.jpg");
+  background-position: center center;
+  background-blend-mode: multiply;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+
+.book-title {
+  text-align: center;
+  margin: 0;
+  font-size: 4em;
+  font-weight: normal;
+  color: white;
+}
+
+.book-name-lg {
+  font-size: 6em;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: 3px 3px 1px black;
+}
+
+.content-section {
+  margin: 1em;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.section-header {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  color: #333;
+  font-size: 2.5em;
+}
+
+.main-footer {
+  background-color: #2c569b;
+  color: #fff;
+  padding: 0.25em 0;
+}
+
+.main-footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.main-footer-container ul {
+  flex-grow: 1;
+  text-align: end;
+}
+
+.footer-nav li {
+  padding: 0 0.5em;
+}
+
+.footer-nav img {
+  width: 30px;
+  height: 30px;
+}
+
+.book-name-footer {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: 3px 3px 1px black;
+}
+
+/* botones */
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.67em 0.67em;
+  cursor: pointer;
+}
+
+.btn-header {
+  margin: 0.5em 28% 2em 28%;
+  color: #fff;
+  border: 2px solid #2c569b;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  font-size: 1.5em;
+  font-weight: lighter;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.btn-header:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #2c569b;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #2d9cdb;
+}
+
+/* Venta de Libros */
+.book-row {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.book-row img {
+  height: 90px;
+  width: 90px;
+}
+
+.book-row:last-child {
+  border: none;
+}
+
+.book-item {
+  display: inline-block;
+  padding-right: 0.5em;
+}
+
+.book-name {
+  color: #555;
+  width: 19%;
+  font-weight: bold;
+}
+
+.book-price {
+  width: 11%;
+}
+
+.book-rating {
+  width: 42%;
+}
+
+.book-picture {
+  width: 52%;
+}
+
+.book-btn {
+  max-width: 19%;
+}
+
+/* Shop items */
+.shop-item {
+  margin: 30px;
+}
+
+.shop-item-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.shop-item-image {
+  height: 250px;
+}
+
+.shop-item-details {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.shop-item-price {
+  flex-grow: 1;
+  color: #333;
+}
+
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Carrito */
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #333;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56ccf2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.btn-purchase {
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 1.75em;
+}
