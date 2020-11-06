@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Trello</title>
+    <meta
+      name="description"
+      content="Desarrollo Web Frontend del clon de Trello"
+    />
+    <meta
+      name="viewport"
+      content="maximum-scale=1,width=device-width, initial-scale=1,user-scalable=0"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div
+      id="trello-root"
+      class="firefox firefox-82 windows body-board-view"
+      style="background-color: rgb(0, 121, 191)"
+    >
+      <div id="chrome-container">
+        <div class="BfrybzRYI4wt4w">
+          <div class="js-trello-root"></div>
+          <div id="surface" class="_1gjOnviSVp-BXI">
+            <div style="min-height: 40px; max-height: 40px; overflow: hidden">
+              <div id="js-trello-root">
+                <div id="header" class="aM_LprkMlpoWR- _2Wi5aGbyvdmxJ9">
+                  <div class="_1ZG6N6wwI3fkaY">
+                    <div>
+                      <button
+                        class="_1dTnNTgBDWldkn _2ZNy4w8Nfa58d1 _16C0c134-8D8JF fP6FS63MKKpUva"
+                        type="button"
+                        aria-label="Cambiar a..."
+                      >
+                        <span
+                          class="nch-icon _2_Q6rrYCFblD3M _3Dk1GPoKnJxuep _1hS8KBZ_zkPTrz _1iYprMLTeGpyW9"
+                        >
+                          <span
+                            class="sc-bdVaJa KBFJig"
+                            role="img"
+                            aria-label="ApplicationSwitcherIcon"
+                          >
+                            <svg
+                              width="24"
+                              height="24"
+                              role="presentation"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M4 5a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zm0 6a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1v-2zm7-7a1 1 0 00-1 1v2a1 1 0 001 1h2a1 1 0 001-1V5a1 1 0 00-1-1h-2zm-1 7a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1v-2zm7-7a1 1 0 00-1 1v2a1 1 0 001 1h2a1 1 0 001-1V5a1 1 0 00-1-1h-2zm-1 7a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1v-2zM5 16a1 1 0 00-1 1v2a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 00-1-1H5zm5 1a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1v-2zm7-1a1 1 0 00-1 1v2a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 00-1-1h-2z"
+                                fill="currentColor"
+                              ></path>
+                            </svg>
+                          </span>
+                        </span>
+                      </button>
+                    </div>
+                    <a
+                      class="_2ZNy4w8Nfa58d1 _2ZNy4w8Nfa58d1 _1WD42rQsKIT-I6"
+                      aria-label="Volver al inicio"
+                      href="/"
+                    >
+                      <span
+                        class="nch-icon _2_Q6rrYCFblD3M _3Dk1GPoKnJxuep _1iYprMLTeGpyW9"
+                      >
+                        <span
+                          class="sc-bdVaJa kBFJig"
+                          role="img"
+                          aria-label="HouseIcon"
+                        >
+                          <svg
+                            width="24"
+                            height="24"
+                            role="presentation"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.586 10.414A2 2 0 003 11.828V19a2 2 0 002 2h5a1 1 0 001-1v-6h2v6a1 1 0 001 1h5a2 2 0 002-2v-7.172a2 2 0 00-.586-1.414l-7.707-7.707a1 1 0 00-1.414 0l-7.707 7.707zM13 12a2 2 0 012 2v5h4v-7.172l-7-7-7 7V19h4v-5a2 2 0 012-2h2z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </span>
+                      </span>
+                    </a>
+                    <button
+                      class="_1dTnNTgBDWldkn _2ZNy4w8Nfa58d1 _16C0c134-8D8JF dMUBlE27pAOSIa"
+                      type="button"
+                      aria-label="Abrir menú de tableros"
+                    >
+                      <span
+                        class="nch-icon _2_Q6rrYCFblD3M _3Dk1GPoKnJxuep _3IkOtLubuAF6kK _1iYprMLTeGpyW9"
+                      >
+                        <span
+                          class="sc-bdVaJa kBFJig"
+                          role="img"
+                          aria-label="BoardIcon"
+                        >
+                          <svg
+                            width="24"
+                            height="24"
+                            role="presentation"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm2 1a1 1 0 011-1h4a1 1 0 011 1v10a1 1 0 01-1 1H6a1 1 0 01-1-1V6zm9-1a1 1 0 00-1 1v6a1 1 0 001 1h4a1 1 0 001-1V6a1 1 0 00-1-1h-4z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="MEu8ZECLGMLeab">Tableros</span>
+                    </button>
+                    <div class="_3Z6i0FBUukKNYK">
+                      <span id="search-input-label-text" class="H-W6qp3xgoZvbe"
+                        >Búsqueda de Trello</span
+                      >
+                      <input
+                        id="K6jlzIGQrHC62G91bAz1WRKohpaJkWco"
+                        class="_1CyMivLdH2a8dA"
+                        autocomplete="off"
+                        autocorrect="off"
+                        spellcheck="false"
+                        type="search"
+                        aria-labelledby="search-input-label-text"
+                        value=""
+                      />
+                      <span class="_2baX9YmlCebcUG">
+                        <label for="K6jlzIGQrHC62G91bAz1WRKohpaJkWco">
+                          <span
+                            class="nch-icon _2_Q6rrYCFblD3M _3Dk1GPoKnJxuep _35K2W68MBDEnev"
+                          >
+                            <span
+                              class="sc-bdVaJa kBFJig"
+                              role="img"
+                              aria-label="SearchIcon"
+                            >
+                              <svg
+                                width="24"
+                                height="24"
+                                role="presentation"
+                                focusable="false"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M10.5 18a7.5 7.5 0 115.936-2.915l3.94 4.01a1 1 0 01-1.425 1.402l-3.938-4.006A7.467 7.467 0 0110.5 18zm5.5-7.5a5.5 5.5 0 11-11 0 5.5 5.5 0 0111 0z"
+                                  fill="currentColor"
+                                ></path>
+                              </svg>
+                            </span>
+                          </span>
+                        </label>
+                      </span>
+                    </div>
+                    <div class="_32kNZW8b-DAcUd">
+                      <button class="_22FfAlSrF_UZ8Z _3tQj9ncxDOdMBH" hidden>
+                        <span class="_3jloUsx0g9Z36M"></span>
+                        <span class="_2mKuoOgSQZjuTu">
+                          <span class="_2RnAxr92Bm6oXT"></span>
+                          <span class="_1EtGuMT1gmti5W">
+                            <span>¡Nuevas funciones!</span>
+                          </span>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                  <a
+                    class="_2eXs5ruz0QfFdH"
+                    href="/"
+                    aria-label="Volver al inicio"
+                  >
+                    <div class="_2JvEWwSoJlzeFr">
+                      <span class="_2B-WAviGr8Py3r"> </span>
+                      <span class="_1q-xxtNvcdFBca"></span>
+                    </div>
+                    <div class="_1g_0YsdqW8hZZg"></div>
+                  </a>
+                  <div class="TMI28E0KnYSK9p">
+                    <button
+                      class="_1dTnNTgBDWldkn _2ZNy4w8Nfa58d1 _16C0c134-8D8JF fP6FS63MKKpUva dMUBlE27pAOSIa"
+                      id="header-create-menu-button"
+                      type="button"
+                      aria-label="Crear tablero o equipo"
+                    >
+                      <span
+                        class="nch-icon _2_Q6rrYCFblD3M _3Dk1GPoKnJxuep _1hS8KBZ_zkPTrz _1iYprMLTeGpyW9"
+                      >
+                        <span
+                          class="sc-bdVaJa kBFJig"
+                          role="img"
+                          aria-label="AddIcon"
+                        >
+                          <svg
+                            width="24"
+                            height="24"
+                            role="presentation"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 3a1 1 0 00-1 1v7H4a1 1 0 100 2h7v7a1 1 0 102 0v-7h7a1 1 0 100-2h-7V4a1 1 0 00-1-1z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </span>
+                      </span>
+                    </button>
+                    <button
+                      class="_1dTnNTgBDWldkn _2ZNy4w8Nfa58d1 _16C0c134-8D8JF fP6FS63MKKpUva dMUBlE27pAOSIa"
+                      id="header-info-button"
+                      type="button"
+                      aria-label="Abrir el menú Información"
+                    >
+                      <span
+                        class="nch-icon _2_Q6rrYCFblD3M _3Dk1GPoKnJxuep _1hS8KBZ_zkPTrz _1iYprMLTeGpyW9"
+                      >
+                        <span
+                          class="sc-bdVaJa kBFJig"
+                          role="img"
+                          aria-label="InformationIcon"
+                        >
+                          <svg
+                            width="24"
+                            height="24"
+                            role="presentation"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M12 20a8 8 0 100-16 8 8 0 000 16zm0 2c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"
+                              fill="currentColor"
+                            ></path>
+                            <path
+                              d="M11 11a1 1 0 112 0v5a1 1 0 11-2 0v-5zm2-3a1 1 0 11-2 0 1 1 0 012 0z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </span>
+                      </span>
+                    </button>
+                    <button
+                      class="_1dTnNTgBDWldkn _2ZNy4w8Nfa58d1 _16C0c134-8D8JF fP6FS63MKKpUva dMUBlE27pAOSIa"
+                      id="header-botifications-button"
+                      type="button"
+                      aria-label="Notificaciones"
+                    >
+                      <span
+                        class="nch-icon _2_Q6rrYCFblD3M _3Dk1GPoKnJxuep _1hS8KBZ_zkPTrz _1iYprMLTeGpyW9"
+                      >
+                        <span
+                          class="sc-bdVaJa kBFJig"
+                          role="img"
+                          aria-label="NotificationIcon"
+                        >
+                          <svg
+                            width="24"
+                            height="24"
+                            role="presentation"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M12 2a1 1 0 00-1 1v.078a4.687 4.687 0 00-1.867.715 4.51 4.51 0 00-1.527 1.76 5.914 5.914 0 00-.53 1.658A5.908 5.908 0 007 7.972V8h1-1v3.723l-2.857 4.762A1 1 0 005 18h14a1 1 0 00.858-1.515L17 11.723V8h-1l1-.001v-.027a2.613 2.613 0 00-.01-.215 5.901 5.901 0 00-.066-.546 5.913 5.913 0 00-.53-1.658 4.51 4.51 0 00-1.527-1.76A4.687 4.687 0 0013 3.078V3a1 1 0 00-1-1zM9 7.988V12a1 1 0 01-.143.514L6.767 16h10.467l-2.092-3.486A1 1 0 0115 12V7.988l-.005-.089a3.903 3.903 0 00-.044-.36 3.92 3.92 0 00-.345-1.092 2.512 2.512 0 00-.848-.99C13.378 5.203 12.825 5 12 5s-1.377.203-1.758.457a2.512 2.512 0 00-.848.99A3.918 3.918 0 009.05 7.54a3.911 3.911 0 00-.05.45zM14 19a2 2 0 11-4 0h4z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </span>
+                      </span>
+                    </button>
+                    <div class="_3yLAldYHXqa5Og"></div>
+                    <button
+                      class="_1dTnNTgBDWldkn _2ZNy4w8Nfa58d1 js-open-header-member-menu _3R2LYccoXhpfv9 _16C0c134-8D8JF dMUBlE27pAOSIa"
+                      type="button"
+                      aria-label="Abrir menú de miembros"
+                      title="Samuel Hernandez (samdev24)"
+                    >
+                      <div
+                        class="_1FekJJAz6Hu32v"
+                        title="Samuel Hernandez (samdev24)"
+                      >
+                        <span
+                          class="_24AWINHReYjNBf aYXvcYtXemTcSj"
+                          style="
+                            height: 32px;
+                            width: 32px;
+                            line-height: 32px;
+                            background-image: url('https://trello-members.s3.amazonaws.com/5df3c33e4207c75ba9f81949/108aa357ce0408f90f21cca1142a1319/50.png');
+                          "
+                        ></span>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <main id="popover-boundary" class="_2-ZL0JUhEcuafN">
+              <div class="js-trello-root">
+                <div></div>
+              </div>
+              <div id="banners">
+                <div></div>
+                <div
+                  class="header-banner mod-warning template-banner hide"
+                ></div>
+                <div
+                  class="header-banner mod-warning logged-in-public-board-banner hide"
+                ></div>
+                <div>
+                  <div>
+                    <div class="js-trello-root"><div></div></div>
+                  </div>
+                </div>
+              </div>
+              <div id="content" tabindex="-1">
+                <div class="board-wrapper">
+                  <div class="board-main-content">
+                    <div class="board-header u-clearfix js-board-header">
+                      <div class="js-board-views-btn-container">
+                        <div class="js-trello-root">
+                          <div>
+                            <a
+                              class="_3zAOR6yRAJtv2O board-header-btn"
+                              role="button"
+                            >
+                              <span
+                                class="nch-icon _2_Q6rrYCFblD3M z53beXNiDPJAy2 Cu2yB8ZOVvr4xR"
+                              >
+                                <span
+                                  class="sc-bdVaJa jKipYA"
+                                  role="img"
+                                  aria-label="ListIcon"
+                                >
+                                  <svg
+                                    width="24"
+                                    height="24"
+                                    role="presentation"
+                                    focusable="false"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M2 7v8a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2H4a2 2 0 00-2 2zm2 0v8h2V7H4zm5 0v6a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2zm2 0v6h2V7h-2zm5 10V7a2 2 0 012-2h2a2 2 0 012 2v10a2 2 0 01-2 2h-2a2 2 0 01-2-2zm2 0V7h2v10h-2z"
+                                      fill="currentColor"
+                                    ></path>
+                                  </svg>
+                                </span>
+                              </span>
+                              <span
+                                class="Bh8V25z8qgXEvC board-views-btn-text-label"
+                              >
+                                Tablero
+                              </span>
+                              <span
+                                class="nch-icon _2_Q6rrYCFblD3M _3Dk1GPoKnJxuep r3feSQQd2D_Fc0 board-views-btn-dropdown-icon"
+                                ><span
+                                  class="sc-bdVaJa jKipYA"
+                                  role="img"
+                                  aria-label="DownIcon"
+                                  ><svg
+                                    width="24"
+                                    height="24"
+                                    role="presentation"
+                                    focusable="false"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path
+                                      d="M11.293 16.707l-7.071-7.07a1 1 0 111.414-1.415L12 14.586l6.364-6.364a1 1 0 111.414 1.414l-7.07 7.071a1 1 0 01-1.415 0z"
+                                      fill="currentColor"
+                                    ></path>
+                                  </svg> </span
+                              ></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="board-header-btn mod-board-name inline-rename-board js-rename-board"
+                        href="#"
+                      >
+                        <h1
+                          class="js-board-editing-target board-header-btn-text"
+                          dir="auto"
+                        >
+                          Titulo del Tablero
+                        </h1>
+                        <input
+                          class="board-name-input js-board-name-input"
+                          aria-label="Titulo del Tablero"
+                          spellcheck="false"
+                          dir="auto"
+                          maxlength="512"
+                          value="Titulo del Tablero"
+                        />
+                      </div>
+                      <a
+                        class="board-header-btn js-star-board"
+                        href="#"
+                        title="Haga clic en este tablero para marcarlo como favorito o quitarlo de favoritos. Los tableros marcados aparecerán entre los primeros de su lista de tableros."
+                        aria-label="Marcar o desmarcar tablero como favorito"
+                        ><span
+                          class="icon-sm icon-star board-header-btn-icon"
+                        ></span
+                      ></a>
+                      <div
+                        class="js-board-header-btn-org-wrapper board-header-btn-org-wrapper"
+                      >
+                        <div class="board-header-btns mod-left">
+                          <span class="board-header-btn-divider"></span
+                          ><span id="workspaces-preamble-board-header-button"
+                            ><div class="js-trello-root">
+                              <a
+                                class="board-header-btn board-header-btn-without-icon"
+                                role="button"
+                                ><span class="board-header-btn-text"
+                                  >Para asuntos privados</span
+                                ></a
+                              >
+                            </div></span
+                          ><span class="board-header-btn-divider"></span>
+                        </div>
+                        <a
+                          id="permission-level"
+                          class="board-header-btn perms-btn js-change-vis"
+                          href="#"
+                          title="Únicamente los miembros del tablero pueden verlo y editarlo."
+                          ><span
+                            class="board-header-btn-icon icon-sm icon-private"
+                          ></span
+                          ><span class="board-header-btn-text">Privado</span></a
+                        >
+                      </div>
+                      <span class="board-header-btn-divider"></span>
+                      <div class="board-header-btns mod-left">
+                        <div
+                          class="board-header-facepile js-fill-facepile js-list-draggable-board-members"
+                        >
+                          <a
+                            tabindex="0"
+                            class="member js-member ui-draggable"
+                            style="z-index: 1"
+                            ><img
+                              class="member-avatar"
+                              src="https://trello-members.s3.amazonaws.com/5df3c33e4207c75ba9f81949/108aa357ce0408f90f21cca1142a1319/30.png"
+                              srcset="
+                                https://trello-members.s3.amazonaws.com/5df3c33e4207c75ba9f81949/108aa357ce0408f90f21cca1142a1319/30.png 1x,
+                                https://trello-members.s3.amazonaws.com/5df3c33e4207c75ba9f81949/108aa357ce0408f90f21cca1142a1319/50.png 2x
+                              "
+                              alt="Samuel Hernandez (samdev24)"
+                              title="Samuel Hernandez (samdev24)"
+                              width="30"
+                              height="30" /><span
+                              id="5df3c33e4207c75ba9f81949-avatar"
+                            ></span
+                            ><span
+                              class="member-type admin"
+                              title="Este miembro es un administrador de este tablero."
+                              aria-label="Este miembro es un administrador de este tablero."
+                            ></span
+                            ><span
+                              class="member-gold-badge"
+                              title="Este miembro tiene Trello Gold."
+                              aria-label="Este miembro tiene Trello Gold."
+                            ></span
+                          ></a>
+                        </div>
+                        <a
+                          id="member-count"
+                          class="board-header-btn board-header-btn-member-count js-open-show-all-board-members js-fill-board-member-count"
+                          href="#"
+                        ></a
+                        ><span id="member-count-notifications"></span
+                        ><span id="workspaces-preamble-invite-button"
+                          ><div class="js-trello-root">
+                            <a
+                              class="board-header-btn board-header-btn-invite board-header-btn-without-icon"
+                              title="Invitar al tablero"
+                              role="button"
+                              ><span class="board-header-btn-text"
+                                >Invitar</span
+                              ></a
+                            >
+                          </div></span
+                        >
+                      </div>
+                      <div class="board-header-btns mod-right">
+                        <a
+                          class="board-header-btn mod-filter-indicator hide js-filter-cards-indicator board-header-btn-without-icon"
+                          href="#"
+                          ><span class="board-header-btn-text"
+                            >2 resultados de búsqueda</span
+                          ><span
+                            class="icon-sm icon-close board-header-btn-icon-close js-filter-card-clear"
+                          ></span></a
+                        ><a
+                          class="board-header-btn sub-btn hide js-board-header-subscribed"
+                          href="#"
+                          ><span
+                            class="icon-sm icon-subscribe board-header-btn-icon"
+                          ></span
+                          ><span class="board-header-btn-text"
+                            >Siguiendo</span
+                          ></a
+                        ><span
+                          class="js-calendar-board-btn board-header-btn-react-container hide"
+                        ></span
+                        ><a class="board-header-btn hide js-map-btn" href="#"
+                          ><span
+                            class="icon-sm icon-location board-header-btn-icon"
+                          ></span
+                          ><span class="board-header-btn-text">Mapa</span></a
+                        ><span class="js-plugin-header-btns"
+                          ><span class="board-header-plugin-btns"
+                            ><span class="board-header-btn"
+                              ><span
+                                class="board-header-btn-icon icon-sm plugin-icon mod-reset"
+                                style="
+                                  background-image: url('https://app.butlerfortrello.com/9b478916d9e56d2c16819b331714a07c8a85549c/./img/butler-powerup-btn-white.svg');
+                                "
+                              ></span
+                              ><span class="board-header-btn-text"
+                                >Butler</span
+                              ></span
+                            ></span
+                          ></span
+                        ><a
+                          class="board-header-btn mod-show-menu js-show-sidebar"
+                          href="#"
+                          ><span
+                            class="icon-sm icon-overflow-menu-horizontal board-header-btn-icon"
+                          ></span
+                          ><span class="board-header-btn-text"
+                            >Mostrar menú</span
+                          ></a
+                        >
+                      </div>
+                      <span id="board-header-notification"></span>
+                    </div>
+                    <div
+                      class="board-warnings u-clearfix js-board-warnings hide"
+                    ></div>
+                    <div class="board-canvas">
+                      <div class="js-board-view-container"></div>
+                      <div
+                        id="board"
+                        class="u-fancy-scrollbar js-no-higher-edits js-list-sortable ui-sortable"
+                      >
+                        <div class="js-list list-wrapper">
+                          <div class="list js-list-content">
+                            <div
+                              class="list-header js-list-header u-clearfix is-menu-shown"
+                            >
+                              <div
+                                class="list-header-target js-editing-target"
+                              ></div>
+                              <h2
+                                class="list-header-name-assist js-list-name-assist"
+                                dir="auto"
+                              >
+                                Jugabilidad
+                              </h2>
+                              <textarea
+                                class="list-header-name mod-list-name js-list-name-input"
+                                aria-label="Jugabilidad"
+                                spellcheck="false"
+                                dir="auto"
+                                maxlength="512"
+                                style="
+                                  overflow: hidden;
+                                  overflow-wrap: break-word;
+                                  height: 28px;
+                                "
+                              >
+Jugabilidad</textarea
+                              >
+                              <div class="list-header-extras">
+                                <span
+                                  class="list-header-extras-subscribe js-list-subscribed hide"
+                                  ><span
+                                    class="icon-sm icon-subscribe mod-quiet"
+                                  ></span></span
+                                ><span
+                                  class="list-header-extras-limit-badge js-list-limit-badge hide"
+                                ></span
+                                ><a
+                                  class="list-header-extras-menu dark-hover js-open-list-menu icon-sm icon-overflow-menu-horizontal"
+                                  href="#"
+                                  ><div></div
+                                ></a>
+                              </div>
+                              <p
+                                class="list-header-num-cards hide js-num-cards"
+                              >
+                                1 tarjeta
+                              </p>
+                            </div>
+                            <div
+                              class="list-cards u-fancy-scrollbar u-clearfix js-list-cards js-sortable ui-sortable"
+                            >
+                              <a
+                                class="list-card js-member-droppable ui-droppable"
+                                href="/c/hVGO5I4P/8-como-se-juega"
+                                ><div
+                                  class="list-card-cover js-card-cover"
+                                ></div>
+                                <span
+                                  class="icon-sm icon-edit list-card-operation dark-hover js-open-quick-card-editor js-card-menu"
+                                ></span>
+                                <div
+                                  class="list-card-stickers-area js-stickers-area hide"
+                                >
+                                  <div class="stickers js-card-stickers"></div>
+                                </div>
+                                <div class="list-card-details js-card-details">
+                                  <div
+                                    class="list-card-labels js-card-labels"
+                                  ></div>
+                                  <span
+                                    class="list-card-title js-card-name"
+                                    dir="auto"
+                                    ><span class="card-short-id hide"
+                                      >N.º 8</span
+                                    >¿Como se juega?</span
+                                  >
+                                  <div class="badges">
+                                    <span class="js-badges"
+                                      ><div
+                                        class="badge is-icon-only"
+                                        title="Esta tarjeta cuenta con una descripción."
+                                      >
+                                        <span
+                                          class="badge-icon icon-sm icon-description"
+                                        ></span></div></span
+                                    ><span
+                                      class="custom-field-front-badges js-custom-field-badges"
+                                      ><span></span></span
+                                    ><span class="js-plugin-badges"
+                                      ><span></span
+                                    ></span>
+                                  </div>
+                                  <div
+                                    class="list-card-members js-list-card-members"
+                                  ></div>
+                                </div>
+                                <p class="list-card-dropzone">
+                                  Soltar archivos que se van a cargar.
+                                </p>
+                                <p class="list-card-dropzone-limited">
+                                  Demasiados adjuntos.
+                                </p>
+                                <p class="list-card-dropzone-restricted">
+                                  Su empresa no lo permite.
+                                </p></a
+                              >
+                            </div>
+                            <div
+                              class="card-composer-container js-card-composer-container"
+                            >
+                              <a
+                                class="open-card-composer js-open-card-composer"
+                                href="#"
+                                ><span class="icon-sm icon-add"></span
+                                ><span class="js-add-a-card hide"
+                                  >Añada una tarjeta</span
+                                ><span class="js-add-another-card"
+                                  >Añada otra tarjeta</span
+                                ></a
+                              >
+                              <div
+                                class="js-card-templates-button card-templates-button-container dark-background-hover"
+                              >
+                                <div class="js-react-root">
+                                  <div>
+                                    <a
+                                      class="_2arBFfwXVxA0AM"
+                                      role="button"
+                                      href="#"
+                                      ><span
+                                        class="icon-sm icon-template-card dark-background-hover"
+                                      ></span
+                                    ></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="js-list list-wrapper">
+                          <div class="list js-list-content">
+                            <div
+                              class="list-header js-list-header u-clearfix is-menu-shown"
+                            >
+                              <div
+                                class="list-header-target js-editing-target"
+                              ></div>
+                              <h2
+                                class="list-header-name-assist js-list-name-assist"
+                                dir="auto"
+                              >
+                                Mejoras
+                              </h2>
+                              <textarea
+                                class="list-header-name mod-list-name js-list-name-input"
+                                aria-label="Mejoras"
+                                spellcheck="false"
+                                dir="auto"
+                                maxlength="512"
+                                style="
+                                  overflow: hidden;
+                                  overflow-wrap: break-word;
+                                  height: 28px;
+                                "
+                              >
+Mejoras</textarea
+                              >
+                              <div class="list-header-extras">
+                                <span
+                                  class="list-header-extras-subscribe js-list-subscribed hide"
+                                  ><span
+                                    class="icon-sm icon-subscribe mod-quiet"
+                                  ></span></span
+                                ><span
+                                  class="list-header-extras-limit-badge js-list-limit-badge hide"
+                                ></span
+                                ><a
+                                  class="list-header-extras-menu dark-hover js-open-list-menu icon-sm icon-overflow-menu-horizontal"
+                                  href="#"
+                                  ><div></div
+                                ></a>
+                              </div>
+                              <p
+                                class="list-header-num-cards hide js-num-cards"
+                              >
+                                1 tarjeta
+                              </p>
+                            </div>
+                            <div
+                              class="list-cards u-fancy-scrollbar u-clearfix js-list-cards js-sortable ui-sortable"
+                            >
+                              <a
+                                class="list-card js-member-droppable ui-droppable"
+                                href="/c/sq3001GT/7-correcciones-errores-y-mejoras"
+                                ><div
+                                  class="list-card-cover js-card-cover"
+                                ></div>
+                                <span
+                                  class="icon-sm icon-edit list-card-operation dark-hover js-open-quick-card-editor js-card-menu"
+                                ></span>
+                                <div
+                                  class="list-card-stickers-area js-stickers-area hide"
+                                >
+                                  <div class="stickers js-card-stickers"></div>
+                                </div>
+                                <div class="list-card-details js-card-details">
+                                  <div class="list-card-labels js-card-labels">
+                                    <span
+                                      class="card-label card-label-red mod-card-front"
+                                      title=""
+                                      ><span class="label-text"
+                                        >&nbsp;</span
+                                      ></span
+                                    >
+                                  </div>
+                                  <span
+                                    class="list-card-title js-card-name"
+                                    dir="auto"
+                                    ><span class="card-short-id hide"
+                                      >N.º 7</span
+                                    >Correcciones, errores y mejoras:</span
+                                  >
+                                  <div class="badges">
+                                    <span class="js-badges"
+                                      ><div
+                                        class="badge is-icon-only"
+                                        title="Esta tarjeta cuenta con una descripción."
+                                      >
+                                        <span
+                                          class="badge-icon icon-sm icon-description"
+                                        ></span></div></span
+                                    ><span
+                                      class="custom-field-front-badges js-custom-field-badges"
+                                      ><span></span></span
+                                    ><span class="js-plugin-badges"
+                                      ><span></span
+                                    ></span>
+                                  </div>
+                                  <div
+                                    class="list-card-members js-list-card-members"
+                                  ></div>
+                                </div>
+                                <p class="list-card-dropzone">
+                                  Soltar archivos que se van a cargar.
+                                </p>
+                                <p class="list-card-dropzone-limited">
+                                  Demasiados adjuntos.
+                                </p>
+                                <p class="list-card-dropzone-restricted">
+                                  Su empresa no lo permite.
+                                </p></a
+                              >
+                            </div>
+                            <div
+                              class="card-composer-container js-card-composer-container"
+                            >
+                              <a
+                                class="open-card-composer js-open-card-composer"
+                                href="#"
+                                ><span class="icon-sm icon-add"></span
+                                ><span class="js-add-a-card hide"
+                                  >Añada una tarjeta</span
+                                ><span class="js-add-another-card"
+                                  >Añada otra tarjeta</span
+                                ></a
+                              >
+                              <div
+                                class="js-card-templates-button card-templates-button-container dark-background-hover"
+                              >
+                                <div class="js-react-root">
+                                  <div>
+                                    <a
+                                      class="_2arBFfwXVxA0AM"
+                                      role="button"
+                                      href="#"
+                                      ><span
+                                        class="icon-sm icon-template-card dark-background-hover"
+                                      ></span
+                                    ></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="js-list list-wrapper">
+                          <div class="list js-list-content">
+                            <div
+                              class="list-header js-list-header u-clearfix is-menu-shown"
+                            >
+                              <div
+                                class="list-header-target js-editing-target"
+                              ></div>
+                              <h2
+                                class="list-header-name-assist js-list-name-assist"
+                                dir="auto"
+                              >
+                                Hecho
+                              </h2>
+                              <textarea
+                                class="list-header-name mod-list-name js-list-name-input"
+                                aria-label="Hecho"
+                                spellcheck="false"
+                                dir="auto"
+                                maxlength="512"
+                                style="
+                                  overflow: hidden;
+                                  overflow-wrap: break-word;
+                                  height: 28px;
+                                "
+                              >
+Hecho</textarea
+                              >
+                              <div class="list-header-extras">
+                                <span
+                                  class="list-header-extras-subscribe js-list-subscribed hide"
+                                  ><span
+                                    class="icon-sm icon-subscribe mod-quiet"
+                                  ></span></span
+                                ><span
+                                  class="list-header-extras-limit-badge js-list-limit-badge hide"
+                                ></span
+                                ><a
+                                  class="list-header-extras-menu dark-hover js-open-list-menu icon-sm icon-overflow-menu-horizontal"
+                                  href="#"
+                                  ><div></div
+                                ></a>
+                              </div>
+                              <p
+                                class="list-header-num-cards hide js-num-cards"
+                              >
+                                0 tarjetas
+                              </p>
+                            </div>
+                            <div
+                              class="list-cards u-fancy-scrollbar u-clearfix js-list-cards js-sortable ui-sortable"
+                            ></div>
+                            <div
+                              class="card-composer-container js-card-composer-container"
+                            >
+                              <a
+                                class="open-card-composer js-open-card-composer"
+                                href="#"
+                                ><span class="icon-sm icon-add"></span
+                                ><span class="js-add-a-card"
+                                  >Añada una tarjeta</span
+                                ><span class="js-add-another-card hide"
+                                  >Añada otra tarjeta</span
+                                ></a
+                              >
+                              <div
+                                class="js-card-templates-button card-templates-button-container dark-background-hover"
+                              >
+                                <div class="js-trello-root">
+                                  <div>
+                                    <a
+                                      class="_2arBFfwXVxA0AM"
+                                      role="button"
+                                      href="#"
+                                      ><span
+                                        class="icon-sm icon-template-card dark-background-hover"
+                                      ></span
+                                    ></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="js-add-list list-wrapper mod-add is-idle">
+                          <form>
+                            <a class="open-add-list js-open-add-list" href="#"
+                              ><span class="placeholder"
+                                ><span class="icon-sm icon-add"></span>Añada
+                                otra lista</span
+                              ></a
+                            ><input
+                              class="list-name-input"
+                              type="text"
+                              name="name"
+                              placeholder="Introduzca el título de la lista..."
+                              autocomplete="off"
+                              dir="auto"
+                              maxlength="512"
+                            />
+                            <div class="list-add-controls u-clearfix">
+                              <input
+                                class="primary mod-list-add-button js-save-edit"
+                                type="submit"
+                                value="Añadir lista"
+                              /><a
+                                class="icon-lg icon-close dark-hover js-cancel-edit"
+                                href="#"
+                              ></a>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="invitee-orientation-mount-point">
+                        <div class="invitee-orientation-wrapper"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
